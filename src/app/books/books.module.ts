@@ -1,0 +1,28 @@
+import {NgModule} from "@angular/core";
+import {RouterModule, Routes} from "@angular/router";
+import { BookSeriesComponent } from './book-series.component';
+import { BookComponent } from './book.component';
+import {BooksService} from "./books.service";
+import {BookCards} from "./books-cards.component";
+import {BookCard} from "./book-card.component";
+import {SharedModule} from "../shared/shared.module";
+
+const bookRoutes: Routes = [
+  {path: 'series/:name', component: BookSeriesComponent},
+  {path: 'series/:name/:id', component: BookComponent}
+];
+@NgModule({
+  imports: [
+    RouterModule.forChild(bookRoutes),
+    SharedModule
+  ],
+  declarations: [
+    BookSeriesComponent,
+    BookComponent,
+    BookCards,
+    BookCard
+  ],
+  providers: [ BooksService ]
+})
+
+export class BooksModule {}
