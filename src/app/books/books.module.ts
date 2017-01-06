@@ -8,8 +8,8 @@ import {BookCard} from "./book-card.component";
 import {SharedModule} from "../shared/shared.module";
 
 const bookRoutes: Routes = [
-  {path: 'series/:name', component: BookSeriesComponent},
-  {path: 'series/:name/:id', component: BookComponent}
+  {path: 'series/:name/:id', component: BookComponent},
+  {path: 'series/:name', component: BookSeriesComponent}
 ];
 @NgModule({
   imports: [
