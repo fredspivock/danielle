@@ -3,9 +3,16 @@ import {Book} from "./book";
 @Component({
   selector: 'ddBookCard',
   template:`
-    <md-card>
-      <img md-card-image [src]="book.imageUrl">
-    </md-card>`
+    <div class="card-wrapper">
+      <div class="book-darken">
+        <img class="book-image" [src]="book.imageUrl">
+       </div>
+    </div>`,
+  styles: [
+    '.book-image {width: 100%; height: auto; -webkit-transition: -webkit-filter linear .5s; transition: filter linear .5s, -webkit-filter linear;}',
+    '.book-image:hover {-webkit-filter: blur(2px);filter: blur(2px); opacity: 0.7}',
+    '.book-darken {background: black}'
+  ]
 })
 
 export class BookCard {

@@ -1,18 +1,14 @@
 import {Component, Input} from "@angular/core";
-import {Book} from "./book";
 import {Serie} from "./series";
 
 @Component({
   selector: 'ddBookCards',
   template: `
-      <md-grid-list cols="5" rowHeight="9:16" gutterSize="15px">
-        <md-grid-tile
-            *ngFor="let book of serie.books">
-          <a [routerLink]="['/series/' + serie.id + '/' + book.id]">
+        <div fxLayout="row" fxLayoutWrap fxLayoutAlign="space-between">
+          <div *ngFor="let book of serie.books" fxFlex.lg="14" fxFlex.md="19" fxFlex.sm="32.5" fxFlex="49.5" class="book-wrapper">
             <ddBookCard [book]="book"></ddBookCard>
-          </a>
-        </md-grid-tile>
-      </md-grid-list>`,
+          </div>
+        </div>`,
   styles: []
 })
 

@@ -1,4 +1,52 @@
+.series-container {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
 .banner {
   width: 100%;
   height:auto;
+}
+
+.description-container {
+  font-size: 1.2em;
+  text-align:justify;
+  font-family: 'Frank Ruhl Libre', sans-serif;
+}
+
+@media (min-width: 1280px) {
+  .description-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .description-title {
+    margin-top: 0;
+  }
+  .book-wrapper {
+    padding-bottom: 10px;
+  }
+}
+
+.top-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+}
+
+.image-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+}
+
+.image-title-wrapper {
+  position: relative;
+}
+
+.book-wrapper {
+  padding-bottom: 20px;
 }

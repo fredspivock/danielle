@@ -7,7 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import {BooksModule} from "./books/books.module";
+import {BooksModule} from "./books/books.module";;
 
 const appRouter: Routes = [
   {path:'auteur', component: AboutComponent}
