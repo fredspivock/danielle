@@ -23,14 +23,11 @@ export class BookSeriesComponent implements OnInit, OnDestroy{
         this.serieId = params['name']
       }
     );
-    this._booksService.getSeries()
-      .subscribe((serie:Serie[]) => {
-        serie.forEach(item => {
+    this._booksService.getSeries().forEach(item => {
           if(item.id === this.serieId) {
             this.serie = item;
           }
         });
-      });
   }
 
   ngOnDestroy() {

@@ -1,28 +1,71 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
 
-import { Observable } from 'rxjs/Observable';
-
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/map';
 import { Serie } from "./series";
+
+var books = [
+  {
+    "id": "cinqDenier",
+    "title": "Les 5 Derniers Dragons",
+    "description": "Lorsque son père O’Neil Dagibold lui révélera l’existence secrète d’un dragon, une créature qu’on croyait inventée pour agrémenter les conversations, Andrick décidera de partir seul à la recherche d’Inféra, le dragon des légendes perdues. Lui, sa soeur jumelle Nina et toute la communauté des enchanteurs connaîtront des tourments et des évènements déchirants tout à fait inattendus.",
+    "imageUrl": "assets/images/cinq-dernier/banner.jpg",
+    "color": "#840d0d",
+    "books": [
+      {
+        "id": 1,
+        "title": "Les Cinq Dernier Dragon: Tome 1",
+        "description": "Lorsque son père O’Neil Dagibold lui révélera l’existence secrète d’un dragon, une créature qu’on croyait inventée pour agrémenter les conversations, Andrick décidera de partir seul à la recherche d’Inféra, le dragon des légendes perdues. Lui, sa soeur jumelle Nina et toute la communauté des enchanteurs connaîtront des tourments et des évènements déchirants tout à fait inattendus.",
+        "imageUrl": "assets/images/cinq-dernier/dragon1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Les Cinq Dernier Dragon: Tome 2",
+        "description": "Lorsque son père O’Neil Dagibold lui révélera l’existence secrète d’un dragon, une créature qu’on croyait inventée pour agrémenter les conversations, Andrick décidera de partir seul à la recherche d’Inféra, le dragon des légendes perdues. Lui, sa soeur jumelle Nina et toute la communauté des enchanteurs connaîtront des tourments et des évènements déchirants tout à fait inattendus.",
+        "imageUrl": "assets/images/cinq-dernier/dragon2.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Les Cinq Dernier Dragon: Tome 3",
+        "description": "Lorsque son père O’Neil Dagibold lui révélera l’existence secrète d’un dragon, une créature qu’on croyait inventée pour agrémenter les conversations, Andrick décidera de partir seul à la recherche d’Inféra, le dragon des légendes perdues. Lui, sa soeur jumelle Nina et toute la communauté des enchanteurs connaîtront des tourments et des évènements déchirants tout à fait inattendus.",
+        "imageUrl": "assets/images/cinq-dernier/dragon3.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Les Cinq Dernier Dragon: Tome 4",
+        "description": "Lorsque son père O’Neil Dagibold lui révélera l’existence secrète d’un dragon, une créature qu’on croyait inventée pour agrémenter les conversations, Andrick décidera de partir seul à la recherche d’Inféra, le dragon des légendes perdues. Lui, sa soeur jumelle Nina et toute la communauté des enchanteurs connaîtront des tourments et des évènements déchirants tout à fait inattendus.",
+        "imageUrl": "assets/images/cinq-dernier/dragon4.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Les Cinq Dernier Dragon: Tome 1",
+        "description": "Lorsque son père O’Neil Dagibold lui révélera l’existence secrète d’un dragon, une créature qu’on croyait inventée pour agrémenter les conversations, Andrick décidera de partir seul à la recherche d’Inféra, le dragon des légendes perdues. Lui, sa soeur jumelle Nina et toute la communauté des enchanteurs connaîtront des tourments et des évènements déchirants tout à fait inattendus.",
+        "imageUrl": "assets/images/cinq-dernier/dragon1.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Les Cinq Dernier Dragon: Tome 2",
+        "description": "Lorsque son père O’Neil Dagibold lui révélera l’existence secrète d’un dragon, une créature qu’on croyait inventée pour agrémenter les conversations, Andrick décidera de partir seul à la recherche d’Inféra, le dragon des légendes perdues. Lui, sa soeur jumelle Nina et toute la communauté des enchanteurs connaîtront des tourments et des évènements déchirants tout à fait inattendus.",
+        "imageUrl": "assets/images/cinq-dernier/dragon2.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Les Cinq Dernier Dragon: Tome 3",
+        "description": "Lorsque son père O’Neil Dagibold lui révélera l’existence secrète d’un dragon, une créature qu’on croyait inventée pour agrémenter les conversations, Andrick décidera de partir seul à la recherche d’Inféra, le dragon des légendes perdues. Lui, sa soeur jumelle Nina et toute la communauté des enchanteurs connaîtront des tourments et des évènements déchirants tout à fait inattendus.",
+        "imageUrl": "assets/images/cinq-dernier/dragon3.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Les Cinq Dernier Dragon: Tome 4",
+        "description": "Lorsque son père O’Neil Dagibold lui révélera l’existence secrète d’un dragon, une créature qu’on croyait inventée pour agrémenter les conversations, Andrick décidera de partir seul à la recherche d’Inféra, le dragon des légendes perdues. Lui, sa soeur jumelle Nina et toute la communauté des enchanteurs connaîtront des tourments et des évènements déchirants tout à fait inattendus.",
+        "imageUrl": "assets/images/cinq-dernier/dragon4.jpg"
+      }
+    ]
+  }
+];
 
 @Injectable()
 export class BooksService {
-  private _bookUrl = 'app/series.json';
 
-  constructor(private _http: Http) {}
-
-  getSeries(): Observable<Serie[]> {
-    return this._http.get(this._bookUrl)
-      .map((response: Response) => response.json())
-      .catch(this.handleError)
-  }
-
-  private handleError(error: Response) {
-    // in a real world app, we may send the server to some remote logging infrastructure
-    // instead of just logging it to the console
-    console.error(error);
-    return Observable.throw(error.json().error || 'Server error');
+  getSeries():Serie[] {
+    return books;
   }
 }

@@ -24,15 +24,12 @@ export class BookComponent implements OnInit {
         this.bookId = params['id'];
       }
     );
-    this._booksService.getSeries()
-      .subscribe((series:Serie[]) => {
-        series.forEach(item => {
+    this._booksService.getSeries().forEach(item => {
           if(item.id === this.serieId) {
             let bookId: number = Number(this.bookId) - 1;
             this.book = item.books[bookId];
           }
         });
-      });
   }
 
 }
