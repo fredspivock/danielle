@@ -22,8 +22,8 @@
   .description-title {
     margin-top: 0;
   }
-  .book-wrapper {
-    padding-bottom: 10px;
+  .image-title {
+    font-size: 2em;
   }
 }
 
@@ -39,14 +39,15 @@
 .image-title {
   position: absolute;
   bottom: 10px;
-  left: 10px;
+  left: 20px;
   color: white;
+  font-size: 3em;
 }
 
 .image-title-wrapper {
   position: relative;
 }
 
-.book-wrapper {
-  padding-bottom: 20px;
+.card-component-wrapper {
+  background-color: #4CAF50;
 }

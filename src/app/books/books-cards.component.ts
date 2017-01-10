@@ -5,9 +5,7 @@ import {Serie} from "./series";
   selector: 'ddBookCards',
   template: `
         <div fxLayout="row" fxLayoutWrap fxLayoutAlign="space-between">
-          <div *ngFor="let book of serie.books" fxFlex.lg="14" fxFlex.md="19" fxFlex.sm="32.5" fxFlex="49.5" class="book-wrapper">
-            <ddBookCard [book]="book"></ddBookCard>
-          </div>
+            <ddBookCard [book]="book" *ngFor="let book of serie.books" fxFlex.lg="14" fxFlex.md="19" fxFlex.sm="32.5" fxFlex="49.5"></ddBookCard>
         </div>`,
   styles: []
 })
