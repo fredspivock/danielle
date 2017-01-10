@@ -1,6 +1,6 @@
 .series-container {
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .banner {
@@ -9,23 +9,12 @@
 }
 
 .description-container {
+  border-top: 5pt solid black;
   font-size: 1.2em;
   text-align:justify;
   font-family: 'Frank Ruhl Libre', sans-serif;
 }
 
-@media (min-width: 1280px) {
-  .description-container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .description-title {
-    margin-top: 0;
-  }
-  .image-title {
-    font-size: 2em;
-  }
-}
 
 .top-container {
   padding-top: 10px;
@@ -41,13 +30,31 @@
   bottom: 10px;
   left: 20px;
   color: white;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .image-title-wrapper {
   position: relative;
+  padding-right: 0;
+  margin-bottom: 30px;
 }
 
 .card-component-wrapper {
   background-color: #4CAF50;
+}
+
+.description-title {
+  margin-top: 0;
+}
+
+@media (min-width: 1280px) {
+
+  .image-title {
+    font-size: 3em;
+  }
+  .image-title-wrapper {
+    position: relative;
+    padding-right: 20px;
+  }
+
 }
