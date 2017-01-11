@@ -8,7 +8,7 @@
         </div>
       </div>
       <div fxFlex.gt-md="33" fxFlex="100" class="description-container">
-        <h2 class="title description-title">Description</h2>
+        <h2 class="title description-title">{{serie.descriptionTitle}}</h2>
         <div>
           {{serie.description}}
         </div>
@@ -22,7 +22,7 @@
 
 </div>
 <!-- books cards -->
-<div >
+<div [style.background-color]="serie.colorBlock">
   <div class="series-container">
     <ddBookCards [serie]="serie"></ddBookCards>
   </div>

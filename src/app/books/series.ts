@@ -4,5 +4,9 @@ export interface Serie {
   title: string,
   description: string,
   imageUrl: string,
-  books: Book[];
+  books: Book[],
+  color: string,
+  descriptionTitle: string,
+  colorBlock:string
+
 }

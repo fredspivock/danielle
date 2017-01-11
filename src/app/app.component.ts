@@ -7,7 +7,13 @@ import { Component } from '@angular/core';
   host:{ "(window:scroll)":"onScroll($event)"}
 })
 export class AppComponent {
+  isScrolled = false;
   onScroll(e) {
-    console.log(e.srcElement.scrollingElement.scrollTop);
+    if(e.srcElement.scrollingElement.scrollTop > 45) {
+      this.isScrolled = true;
+    }
+    else {
+      this.isScrolled = false;
+    }
   }
 }
