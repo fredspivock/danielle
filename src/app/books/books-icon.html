@@ -1,7 +1,8 @@
 <div fxLayout="row" fxLayoutWrap>
   <div *ngFor="let icon of serie.icons" fxFlex.gt-xs="33" fxFlex="100">
     <div class="icon-wrapper">
-      <img [src]="icon">
+      <img [src]="icon.src">
+      <div class="icon-caption">{{icon.caption}}</div>
     </div>
   </div>
 </div>

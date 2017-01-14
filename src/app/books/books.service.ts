@@ -9,8 +9,12 @@ var books = [
     "descriptionTitle": "Une quête fantastique!",
     "description": "Lorsque son père O’Neil Dagibold lui révélera l’existence secrète d’un dragon, une créature qu’on croyait inventée pour agrémenter les conversations, Andrick décidera de partir seul à la recherche d’Inféra, le dragon des légendes perdues. Lui, sa soeur jumelle Nina et toute la communauté des enchanteurs connaîtront des tourments et des évènements déchirants tout à fait inattendus.",
     "imageUrl": "assets/images/cinq-dernier/banner.jpg",
-    "icons": ["assets/icons/adventure.svg", "assets/icons/age.svg", "assets/icons/magic.svg"],
-    "color": "#840d0d",
+    "icons": [
+      {"src": "assets/icons/adventure.svg", "caption": "Adventure"},
+      {"src": "assets/icons/age.svg", "caption": "Age 10+"},
+      {"src":"assets/icons/magic.svg", "caption": "Magie"}
+    ],
+    "color": "#681010",
     "colorBlock": "#1c293d",
     "books": [
       {

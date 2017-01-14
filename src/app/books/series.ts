@@ -8,6 +8,6 @@ export interface Serie {
   color: string,
   descriptionTitle: string,
   colorBlock:string,
-  icons: string[]
+  icons: any[]
 
 }
