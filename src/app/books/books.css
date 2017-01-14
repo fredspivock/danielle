@@ -59,3 +59,10 @@
   }
 
 }
+
+.icons-container {
+  width: 100%;
+  height: auto;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}

@@ -18,10 +18,9 @@
 </div>
 
 <!-- icon class -->
-<div [style.background-color]="serie.color" style="height: 400px; width: 100%">
-
+<div [style.background-color]="serie.color" class="icons-container">
+  <ddBooksIcons [serie]="serie"></ddBooksIcons>
 </div>
-<!-- books cards -->
 <div [style.background-color]="serie.colorBlock">
   <div class="series-container">
     <ddBookCards [serie]="serie"></ddBookCards>

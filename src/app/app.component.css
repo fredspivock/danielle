@@ -27,15 +27,18 @@ nav {
   transition: all .5s ease;
 }
 
-nav.scrolled {
-  opacity: .7;
-  height: 35px;
-  border-bottom: solid 1px black;
+@media (min-width: 1280px) {
+  nav.scrolled {
+    opacity: .7;
+    height: 35px;
+    border-bottom: solid 1px black;
+  }
+
+  nav.scrolled .title {
+    font-size: 1.7em;
+  }
 }
 
-nav.scrolled .title {
-  font-size: 1.7em;
-}
 
 .nav-padding {
   height:40px;

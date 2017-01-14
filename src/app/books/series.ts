@@ -7,6 +7,7 @@ export interface Serie {
   books: Book[],
   color: string,
   descriptionTitle: string,
-  colorBlock:string
+  colorBlock:string,
+  icons: string[]
 
 }

@@ -6,6 +6,7 @@ import {BooksService} from "./books.service";
 import {BookCards} from "./books-cards.component";
 import {BookCard} from "./book-card.component";
 import {SharedModule} from "../shared/shared.module";
+import {BooksIcon} from "./books-icon.component";
 
 const bookRoutes: Routes = [
   {path: 'series/:name/:id', component: BookComponent},
@@ -20,7 +21,8 @@ const bookRoutes: Routes = [
     BookSeriesComponent,
     BookComponent,
     BookCards,
-    BookCard
+    BookCard,
+    BooksIcon
   ],
   providers: [ BooksService ]
 })

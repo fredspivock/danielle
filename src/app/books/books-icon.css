@@ -1,0 +1,10 @@
+.icon-wrapper {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: solid 5px white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
