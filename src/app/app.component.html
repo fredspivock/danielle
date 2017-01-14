@@ -1,12 +1,24 @@
 <nav [class.scrolled]="isScrolled">
   <span class="title">Danielle Dumais</span>
-  <ul>
-    <li><a [routerLink]="['/auteur']">Auteur</a></li>
+  <ul class="topbar">
+    <li><a [routerLink]="['/auteur']" routerLinkActive="active">Auteur</a></li>
     <li><a [routerLink]="['/series/cinqDenier']" routerLinkActive="active">Les 5 Denier Dragon</a></li>
   </ul>
+  <div class="hamburger-wrapper" (click)="sidenav.toggle()">
+    <span class="fa fa-2x fa-bars"></span>
+  </div>
 </nav>
 <div class="nav-padding"></div>
-<router-outlet></router-outlet>
-<footer class="main-footer">
+<md-sidenav-container>
+  <md-sidenav #sidenav mode="over" opened="false">
+    <ul class="bottombar">
+      <li><a [routerLink]="['/auteur']" routerLinkActive="active">Auteur</a></li>
+      <li><a [routerLink]="['/series/cinqDenier']" routerLinkActive="active">Les 5 Denier Dragon</a></li>
+    </ul>
+  </md-sidenav>
+  <router-outlet></router-outlet>
+  <footer class="main-footer">
 
-</footer>
+  </footer>
+</md-sidenav-container>
+
