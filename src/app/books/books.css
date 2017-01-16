@@ -8,11 +8,17 @@
   height:auto;
 }
 
+.book-banner {
+  margin: 0 auto;
+  width: 30%;
+  height:auto;
+}
+
+
 .description-container {
-  border-top: 5pt solid black;
   font-size: 1.2em;
   text-align:justify;
-  font-family: 'Frank Ruhl Libre', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -22,7 +28,7 @@
 }
 
 .title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'PT Serif', serif;
 }
 
 .image-title {
@@ -38,6 +44,10 @@
   position: relative;
   padding-right: 0;
   margin-bottom: 30px;
+}
+
+.book-image-title-wrapper {
+  text-align: center;
 }
 
 .card-component-wrapper {

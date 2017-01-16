@@ -4,8 +4,8 @@ import {Serie} from "./series";
 @Component({
   selector: 'ddBookCards',
   template: `
-        <div fxLayout="row" fxLayoutWrap fxLayoutAlign="space-between" class="cards-container">
-            <ddBookCard [book]="book" *ngFor="let book of serie.books" fxFlex.="19" fxFlex.lg="19" fxFlex.md="24" fxFlex.sm="32" fxFlex="49.5"></ddBookCard>
+        <div fxLayout="row" fxLayoutWrap fxLayoutAlign="start" class="cards-container">
+            <ddBookCard [book]="book" [serieId]="serie.id" *ngFor="let book of serie.books" fxFlex.gt-lg="20" fxFlex.lg="20" fxFlex.md="25" fxFlex.sm="33" fxFlex="50"></ddBookCard>
         </div>`,
   styles: [
     '.cards-container { padding-top: 20px; padding-bottom: 20px}'

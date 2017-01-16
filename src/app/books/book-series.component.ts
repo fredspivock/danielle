@@ -20,14 +20,15 @@ export class BookSeriesComponent implements OnInit, OnDestroy{
   ngOnInit(): void {
     this.sub = this._route.params.subscribe(
       params => {
-        this.serieId = params['name']
-      }
-    );
-    this._booksService.getSeries().forEach(item => {
+        this.serieId = params['name'];
+        this._booksService.getSeries().forEach(item => {
           if(item.id === this.serieId) {
             this.serie = item;
           }
         });
+      }
+    );
+
   }
 
   ngOnDestroy() {

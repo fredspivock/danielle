@@ -3,6 +3,7 @@
   <ul class="topbar">
     <li><a [routerLink]="['/auteur']" routerLinkActive="active">Auteur</a></li>
     <li><a [routerLink]="['/series/cinqDenier']" routerLinkActive="active">Les 5 Denier Dragon</a></li>
+    <li><a [routerLink]="['/series/ordreDragon']" routerLinkActive="active">Ordre des 5 Dragon</a></li>
   </ul>
   <div class="hamburger-wrapper" (click)="sidenav.toggle()">
     <span class="fa fa-2x fa-bars"></span>
@@ -14,6 +15,7 @@
     <ul class="bottombar">
       <li><a [routerLink]="['/auteur']" routerLinkActive="active">Auteur</a></li>
       <li><a [routerLink]="['/series/cinqDenier']" routerLinkActive="active">Les 5 Denier Dragon</a></li>
+      <li><a [routerLink]="['/series/ordreDragon']" routerLinkActive="active">Ordre des 5 Dragon</a></li>
     </ul>
   </md-sidenav>
   <router-outlet></router-outlet>

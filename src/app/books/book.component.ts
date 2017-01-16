@@ -7,7 +7,8 @@ import { ActivatedRoute } from '@angular/router';
 import {BooksService} from './books.service';
 
 @Component({
-  templateUrl: './book.html'
+  templateUrl: './book.html',
+  styleUrls: ['./books.css']
 })
 
 export class BookComponent implements OnInit {
@@ -15,6 +16,7 @@ export class BookComponent implements OnInit {
   serieId: string;
   bookId: string;
   book = {};
+  serie: Serie;
   private sub: Subscription;
   constructor(private _route: ActivatedRoute, private _booksService: BooksService){}
   ngOnInit(): void {
@@ -22,14 +24,15 @@ export class BookComponent implements OnInit {
       params => {
         this.serieId = params['name'];
         this.bookId = params['id'];
-      }
-    );
-    this._booksService.getSeries().forEach(item => {
+        this._booksService.getSeries().forEach(item => {
           if(item.id === this.serieId) {
             let bookId: number = Number(this.bookId) - 1;
             this.book = item.books[bookId];
+            this.serie = item;
           }
         });
+      }
+    );
   }
 
 }

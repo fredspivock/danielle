@@ -1,3 +1,21 @@
-{{book.title}}
-{{book.id}}
-{{book.description}}
+<div class="series-container">
+  <div class="top-container">
+    <div fxLayout="row" fxLayoutWrap fxLayout="center none">
+      <div fxFlex.gt-md="67" fxFlex="100">
+        <div class="image-title-wrapper book-image-title-wrapper">
+          <img [src]="book.imageUrl" class="book-banner">
+        </div>
+      </div>
+      <div fxFlex.gt-md="33" fxFlex="100" class="description-container">
+        <h2 class="title description-title">{{book.title}}</h2>
+        <div>
+          {{book.description}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div [style.background-color]="serie.colorBlock">
+  <div class="series-container">
+    <ddBookCards [serie]="serie"></ddBookCards>
+  </div>
+</div>

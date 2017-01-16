@@ -5,8 +5,9 @@
   border: solid 5px white;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+
 }
 
 .icon-caption {
@@ -15,5 +16,32 @@
   width: 100%;
   color: white;
   font-size: 1.5em;
+  text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 900px) {
+  .icon-wrapper {
+    height: 100px;
+    width: 100px;
+  }
+
+  .icon-caption {
+    font-size: .75em;
+  }
+}
+
+@media (max-width: 600px) {
+  .icon-wrapper {
+    height: 80px;
+    width: 80px;
+  }
+  .icon-caption {
+    font-size: .75em;
+  }
+}
+
+.icon-repeat {
+  display: inline-block;
+  width: 33%;
 }
