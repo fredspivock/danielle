@@ -4,6 +4,7 @@
     <li><a [routerLink]="['/auteur']" routerLinkActive="active">Auteur</a></li>
     <li><a [routerLink]="['/series/cinqDenier']" routerLinkActive="active">Les 5 Denier Dragon</a></li>
     <li><a [routerLink]="['/series/ordreDragon']" routerLinkActive="active">Ordre des 5 Dragon</a></li>
+    <li><a [routerLink]="['/series/salsa']" routerLinkActive="active">Sortilèges, salsa et compagnie</a></li>
   </ul>
   <div class="hamburger-wrapper" (click)="sidenav.toggle()">
     <span class="fa fa-2x fa-bars"></span>
@@ -16,11 +17,18 @@
       <li><a [routerLink]="['/auteur']" routerLinkActive="active">Auteur</a></li>
       <li><a [routerLink]="['/series/cinqDenier']" routerLinkActive="active">Les 5 Denier Dragon</a></li>
       <li><a [routerLink]="['/series/ordreDragon']" routerLinkActive="active">Ordre des 5 Dragon</a></li>
+      <li><a [routerLink]="['/series/salsa']" routerLinkActive="active">Sortilèges, salsa et compagnie</a></li>
     </ul>
   </md-sidenav>
   <router-outlet></router-outlet>
   <footer class="main-footer">
-
+    <div class="footer-title"><h2>Contacts et réseaux sociaux</h2></div>
+    <div class="social-medias">
+      <a href="https://www.facebook.com/danielle.dumais1">
+        <span class="fa fa-facebook-official fa-3x"></span>
+      </a>
+    </div>
+    <div class="rights">© 2017 Danielle Dumais. All rights reserved.</div>
   </footer>
 </md-sidenav-container>
 
