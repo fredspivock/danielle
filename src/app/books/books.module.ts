@@ -7,10 +7,12 @@ import {BookCards} from "./books-cards.component";
 import {BookCard} from "./book-card.component";
 import {SharedModule} from "../shared/shared.module";
 import {BooksIcon} from "./books-icon.component";
+import {BioComponent} from "./bio.component";
 
 const bookRoutes: Routes = [
   {path: 'series/:name/:id', component: BookComponent},
-  {path: 'series/:name', component: BookSeriesComponent}
+  {path: 'series/:name', component: BookSeriesComponent},
+  {path: 'auteur', component: BioComponent}
 ];
 @NgModule({
   imports: [
@@ -22,7 +24,8 @@ const bookRoutes: Routes = [
     BookComponent,
     BookCards,
     BookCard,
-    BooksIcon
+    BooksIcon,
+    BioComponent
   ],
   providers: [ BooksService ]
 })

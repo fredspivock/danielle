@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
-import { Serie } from "./series";
+import {Serie} from "./series";
 
 var books = [
   {
@@ -10,9 +10,9 @@ var books = [
     "description": "Lorsque son père O’Neil Dagibold lui révélera l’existence secrète d’un dragon, une créature qu’on croyait inventée pour agrémenter les conversations, Andrick décidera de partir seul à la recherche d’Inféra, le dragon des légendes perdues. Lui, sa soeur jumelle Nina et toute la communauté des enchanteurs connaîtront des tourments et des évènements déchirants tout à fait inattendus.",
     "imageUrl": "assets/images/cinq-dernier/banner.jpg",
     "icons": [
-      {"src": "assets/icons/adventure.svg", "caption": "Adventure"},
+      {"src": "assets/icons/adventure.svg", "caption": "Aventure"},
       {"src": "assets/icons/age.svg", "caption": "Age 10+"},
-      {"src":"assets/icons/magic.svg", "caption": "Magie"}
+      {"src": "assets/icons/magic.svg", "caption": "Magie"}
     ],
     "color": "#681010",
     "colorBlock": "#1c293d",
@@ -97,11 +97,11 @@ var books = [
     "title": "L’ordre des 5 dragons",
     "descriptionTitle": "L’aventure se poursuit !",
     "description": "Andrick ne supporte pas que des Rongirs, des créatures venues d’ailleurs, attaquent les dragons de façon continuelle. Cette menace perpétuelle force Andrick et les chevaliers de Pentacle à se rendre à Abraxas afin de les neutraliser. Bien des aventures en perspective !",
-    "imageUrl": "assets/images/cinq-dernier/banner.jpg",
+    "imageUrl": "assets/images/odragons/odragonban.jpg",
     "icons": [
-      {"src": "assets/icons/adventure.svg", "caption": "Adventure"},
+      {"src": "assets/icons/adventure.svg", "caption": "Aventure"},
       {"src": "assets/icons/age.svg", "caption": "Age 10+"},
-      {"src":"assets/icons/magic.svg", "caption": "Magie"}
+      {"src": "assets/icons/magic.svg", "caption": "Magie"}
     ],
     "color": "#2c0c5b",
     "colorBlock": "#093e60",
@@ -133,9 +133,9 @@ var books = [
     "description": "Les jumelles Saléna et Samara ont plus qu’un tour de magie dans leur sac. Grâce à un événement inattendu, elles acquerront des pouvoirs magiques. Elles apprendront que deux de ses voisins, Simon et Maxime, ont eu aussi des pouvoirs magiques. Une alliance entre eux se formera. De multiples péripéties loufoques se succéderont à un rythme soutenu. Rire garanti.",
     "imageUrl": "assets/images/salsa/bansort.jpg",
     "icons": [
-      {"src": "assets/icons/adventure.svg", "caption": "Adventure"},
+      {"src": "assets/icons/adventure.svg", "caption": "Aventure"},
       {"src": "assets/icons/age9.svg", "caption": "Age 9+"},
-      {"src":"assets/icons/magic.svg", "caption": "Magie"}
+      {"src": "assets/icons/magic.svg", "caption": "Magie"}
     ],
     "color": "#84024e",
     "colorBlock": "#137375",
@@ -177,13 +177,75 @@ var books = [
         "imageUrl": "assets/images/salsa/sort6.jpg"
       }
     ]
+  },
+  {
+    "id": "jeuxpouvoir",
+    "title": "Les Jeux du pouvoir",
+    "descriptionTitle": "Une liberté illusoire !",
+    "description": "Vivant dans une ville autarcique et retirée, Noémie Cyr rêve de liberté et de voyages. Une occasion inespérée s’offre à elle, mais au fil du temps, cette opportunité tournera au cauchemar.Pour les détenteurs tout-puissants de plus de 85% des richesses du monde, la vie ne pèse pas lourd. Pour divertir la planète, ils ont concocté une télé-réalité où des épreuves mortelles attentent les candidats.",
+    "imageUrl": "assets/images/jeuxpou/jeuxpou.jpg",
+    "icons": [
+      {"src": "assets/icons/robot.svg", "caption": "Science-fiction"},
+      {"src": "assets/icons/age13.svg", "caption": "Age 13+"},
+      {"src": "assets/icons/drop.svg", "caption": "Survie"}
+    ],
+    "color": "#214247",
+    "colorBlock": "#636108",
+    "books": [
+      {
+        "id": 1,
+        "title": "Tome 1 Les pions",
+        "description": "Altina ouvre ses portes à une des personnalités les plus riches et puissantes de la planète, monsieur Edgar Powell. Un concours visant à dénicher trois personnes talentueuses pour un travail bien particulier à Paradisa, un archipel situé loin de toute civilisation au milieu de l’océan Pacifique, est organisé non seulement à Altina, mais aussi partout dans le monde. Noémie, une jeune Altinaise tente sa chance à l’insu de sa famille et de son petit ami, Xavier, et s’inscrit à ce concours. Lorsqu’elle le leur apprend, ses proches désapprouvent vertement sa décision. Elle veut alors annuler sa candidature, mais elle constate qu’il est impossible de le faire.Choisie parmi un nombre imposant de candidats, des épreuves dites « amusantes » s’amorcent pour déterminer les gagnants qui s’envoleront pour Paradisa. Une étape mortelle se prépare. En sortira-t-elle vivante ?",
+        "imageUrl": "assets/images/jeuxpou/jeux1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Tome 2 Les règles",
+        "description": "Trente-six personnes, 12 pays, un combat : l’obtention d’une PAM (pile antimatière). Tel est le destin de Noémie Cyr : une bataille pour rapporter une PAM à Altina. Elle n’est pas seule dans cette course. Trente-cinq autres personnes désireront avec ardeur la même chose : ravir cette pile tant convoitée.Elles navigueront sur un luxueux paquebot à destination de Paradisa, mais le voyage sera loin d’être une croisière de rêve ; et que dire de leur arrivée à Paradisa ! Dès le départ, les compatriotes Noah Prost et Jade Vidal se tiennent ensemble et préparent en catimini un guet-apens pour qu’elle n’arrive jamais à Paradisa. Saura-t-elle éviter leur stratagème ? Parviendra-t-elle à Paradisa, là où la chasse vaut plus que la prise ?",
+        "imageUrl": "assets/images/jeuxpou/jeux2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "detective",
+    "title": "L’ Ame d’une détective",
+    "descriptionTitle": "Il n’existe pas de crimes parfaits !",
+    "description": "C’est avec une immense joie que la sergente-détective Martine Gendron accède à la section des homicides. 26 ans sont passés depuis la mort de son père. Quotidiennement, elle se remémore le jour où elle accompagnait fièrement son père et que celui-ci est décédé suite à une balle perdue lors d’un cambriolage d’une banque. À son grand désarroi, le meurtrier n’a jamais été retrouvé ainsi que ses comparses du vol par effraction. Consciente que la perte d’un être cher change une vie, elle se fera un devoir de rechercher coûte que coûte les criminels impunis.",
+    "imageUrl": "assets/images/detective/detectiveban.jpg",
+    "icons": [
+      {"src": "assets/icons/robot.svg", "caption": "Polar"},
+      {"src": "assets/icons/age13.svg", "caption": "Age 13+"},
+      {"src": "assets/icons/drop.svg", "caption": "Justice"}
+    ],
+    "color": "#214247",
+    "colorBlock": "#636108",
+    "books": [
+      {
+        "id": 1,
+        "title": "Tome 1 Mosaïque",
+        "description": "Un cas compliqué échoue sur le bureau de Martine Gendron. Sur place, elle découvre une personne défigurée à coups d’un objet contondant gisant sans vie dans son lit. Aucune trace d’effraction. Une panoplie de suspects se présentera à elle, tous ayant plus ou moins une raison de le tuer. Plusieurs de ses collègues rêvent de s’approprier de ce cas et sont prêts à lui jouer dans le dos. Fort heureusement, quelques jours après un début cahoteux d’enquête, Bernard son supérieur immédiat lui rappela: « c’est ton enquête, ta première, ta vraie enquête. Elle t’appartient ». Cette phrase lui redonna confiance. Oui, elle le savait. Le métier d’enquêteur usait l’âme et déjà elle en ressentait les premiers effets. Sur une trame de roman policier, vous découvrirez la nature perturbée de Martine ainsi que ses hésitations et ses malaises. ",
+        "imageUrl": "assets/images/detective/detective1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Tome 2 Les déesses de glace",
+        "description": "Elle était resplendissante comme une poupée vitrifiée, comme une déesse dans son sanctuaire à quelques pas d’un large escalier de bois. Les arbres dissimulaient le haut de l’escalier. Martine avait envie de gravir cet escalier qui montait vers l’infini. Un calme mystérieux régnait et les enveloppait. Elle est parfaite. Ses cheveux sont bien placés. Martine Gendron et son compagnon Boris Popovich sont à la recherche de ce tueur qui tue en hiver et qui se limite à un secteur très particulier, la faculté de médecine de l’université de McGill. Bien vite, les horreurs de rites sataniques les hanteront et glaceront le sang des enquêteurs à la recherche de ce tueur en série. Lorsqu’une seconde tempête s’abat sur Montréal, Martine est convaincue qu’une quatrième victime décédera.",
+        "imageUrl": "assets/images/detective/detective2.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Tome 3 Animal",
+        "description": "Martine épingle les photos de cinq fillettes sur le tableau de liège, cinq fillettes âgées entre 8 et 10 ans dont la disparition reste inexpliquée. Un mystère total. Pourtant, le premier cas remonte déjà à un peu moins de cinq ans. Des rencontres éprouvantes sont en vue. Certaines familles ont fait leur deuil, d’autres espèrent encore que leur enfant soit vivante, d’autres oscillent entre le deuil et la certitude de revoir leur enfant. Avec le temps, l’espoir s’effrite et les sentiments sont d’autant plus douloureux. Bien que le désir le plus profond de Martine soit de trouver ce ravisseur ou ce meurtrier, elle ne se sent pas la force nécessaire de les confronter et d’entendre leurs sanglots. Pourtant, une hantise l’obsède. Cet être ignoble est sur le point de récidiver. Martine doit maîtriser ses émotions et foncer à la recherche de ce monstre, de cet animal. Arrivera-t-elle à temps pour contrecarrer son plan machiavélique, avant qu’une sixième fillette ne tombe entre ses sales mains?",
+        "imageUrl": "assets/images/detective/detective3.jpg"
+      }
+    ]
   }
 ];
 
 @Injectable()
 export class BooksService {
 
-  getSeries():Serie[] {
+  getSeries(): Serie[] {
     return books;
   }
 }

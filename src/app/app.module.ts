@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import {BooksModule} from "./books/books.module";;
 
 const appRouter: Routes = [
-  {path:'auteur', component: AboutComponent}
+  {path: '', redirectTo: '/auteur', pathMatch: 'full'}
 ];
 
 @NgModule({
