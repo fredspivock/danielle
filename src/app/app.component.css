@@ -129,6 +129,11 @@ nav {
   color: white;
 }
 
+.social-medias a:hover {
+  padding-left: 2%;
+  color: rgb(182, 182, 182);
+}
+
 .footer-title {
   padding-left: 2%;
 }

@@ -1,0 +1,32 @@
+.serieimage {
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.serie-wrapper {
+  padding: 5px;
+  position: relative;
+}
+
+.image-title {
+  position: absolute;
+  text-transform: uppercase;
+  bottom: 30px;
+  left: 20px;
+  color: white;
+  font-size: 1.3em;
+  text-shadow: 0 0 15px #000000;
+}
+
+.series-container {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+@media (min-width: 1280px) {
+  .series-container {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+  }
+}

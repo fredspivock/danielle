@@ -1,0 +1,11 @@
+
+<div fxLayout="row" fxLayoutWrap fxLayoutAlign="start" class="series-container">
+  <div *ngFor="let serie of series" fxFlex.gt-lg="33" fxFlex.lg="33" fxFlex.md="33" fxFlex.sm="50" fxFlex="100">
+    <a [routerLink]="['/series/' + serie.id]">
+      <div class="serie-wrapper">
+        <img [src]="serie.imageUrl" class="serieimage">
+        <div class="image-title">{{serie.title}}</div>
+      </div>
+    </a>
+  </div>
+</div>

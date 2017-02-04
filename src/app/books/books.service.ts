@@ -213,9 +213,9 @@ var books = [
     "description": "C’est avec une immense joie que la sergente-détective Martine Gendron accède à la section des homicides. 26 ans sont passés depuis la mort de son père. Quotidiennement, elle se remémore le jour où elle accompagnait fièrement son père et que celui-ci est décédé suite à une balle perdue lors d’un cambriolage d’une banque. À son grand désarroi, le meurtrier n’a jamais été retrouvé ainsi que ses comparses du vol par effraction. Consciente que la perte d’un être cher change une vie, elle se fera un devoir de rechercher coûte que coûte les criminels impunis.",
     "imageUrl": "assets/images/detective/detectiveban.jpg",
     "icons": [
-      {"src": "assets/icons/robot.svg", "caption": "Polar"},
+      {"src": "assets/icons/polar.svg", "caption": "Polar"},
       {"src": "assets/icons/age13.svg", "caption": "Age 13+"},
-      {"src": "assets/icons/drop.svg", "caption": "Justice"}
+      {"src": "assets/icons/justice.svg", "caption": "Justice"}
     ],
     "color": "#214247",
     "colorBlock": "#636108",
