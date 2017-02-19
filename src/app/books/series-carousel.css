@@ -1,17 +1,20 @@
 .series-image-wrapper {
   margin-left: 2%;
   margin-right: 2%;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
 }
 
 @media (min-width: 1280px) {
   .serie-wrapper{
     height: 400px;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .serie-wrapper img{
-    transform: translateY(-15%);
+    transform: translateY(-14%);
+  }
+  .image-title {
+    font-size: 3.0em;
   }
 }
 
@@ -21,7 +24,7 @@
   bottom: 30px;
   left: 20px;
   color: white;
-  font-size: 3.0em;
+  font-size: 2.0em;
   text-shadow: 0 0 40px #000000;
 }
 
