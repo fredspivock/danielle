@@ -1,13 +1,21 @@
 .icon-wrapper {
-  height: 200px;
-  width: 200px;
+  text-align: center;
   border-radius: 50%;
   border: solid 5px white;
+  width: 180px;
+  height: 180px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 60px;
+}
 
+
+.icon-wrapper img {
+  height: 165px;
+  width: auto;
+}
+
+.repeat-icon {
+  padding: 2%;
 }
 
 .icon-caption {
@@ -22,8 +30,12 @@
 
 @media (max-width: 900px) {
   .icon-wrapper {
-    height: 100px;
     width: 100px;
+    height: 100px;
+  }
+
+  .icon-wrapper img {
+    height: 90px;
   }
 
   .icon-caption {
@@ -32,16 +44,5 @@
 }
 
 @media (max-width: 600px) {
-  .icon-wrapper {
-    height: 80px;
-    width: 80px;
-  }
-  .icon-caption {
-    font-size: .75em;
-  }
-}
 
-.icon-repeat {
-  display: inline-block;
-  width: 33%;
 }

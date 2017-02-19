@@ -8,9 +8,12 @@ import {BookCard} from "./book-card.component";
 import {SharedModule} from "../shared/shared.module";
 import {BooksIcon} from "./books-icon.component";
 import {BioComponent} from "./bio.component";
-import {SeriesComponent} from "./series.component"
+import {SeriesComponent} from "./series.component";
+import {SeriesPageComponent} from "./series-page.component";
+import {SeriesCarouselComponent} from "./series-carousel.component";
 
 const bookRoutes: Routes = [
+  {path: 'series', component: SeriesPageComponent},
   {path: 'series/:name/:id', component: BookComponent},
   {path: 'series/:name', component: BookSeriesComponent},
   {path: 'auteur', component: BioComponent}
@@ -27,7 +30,9 @@ const bookRoutes: Routes = [
     BookCard,
     BooksIcon,
     BioComponent,
-    SeriesComponent
+    SeriesComponent,
+    SeriesPageComponent,
+    SeriesCarouselComponent
   ],
   providers: [ BooksService ]
 })

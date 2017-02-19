@@ -1,12 +1,8 @@
 <nav [class.scrolled]="isScrolled">
   <span class="title">Danielle Dumais</span>
   <ul class="topbar">
+    <li><a [routerLink]="['/series']" routerLinkActive="active">Les Series</a></li>
     <li><a [routerLink]="['/auteur']" routerLinkActive="active">Auteur</a></li>
-    <li><a [routerLink]="['/series/cinqDenier']" routerLinkActive="active">Les 5 derniers dragons</a></li>
-    <li><a [routerLink]="['/series/ordreDragon']" routerLinkActive="active">L’Ordre des 5 Dragons</a></li>
-    <li><a [routerLink]="['/series/salsa']" routerLinkActive="active">Sortilèges, salsa et compagnie</a></li>
-    <li><a [routerLink]="['/series/jeuxpouvoir']" routerLinkActive="active">Les Jeux du pouvoir</a></li>
-    <li><a [routerLink]="['/series/detective']" routerLinkActive="active">L’Ame d’une détective</a></li>
   </ul>
   <div class="hamburger-wrapper" (click)="sidenav.toggle()">
     <span class="fa fa-2x fa-bars"></span>
@@ -14,14 +10,10 @@
 </nav>
 <div class="nav-padding"></div>
 <md-sidenav-container>
-  <md-sidenav #sidenav mode="over" opened="false">
+  <md-sidenav #sidenav mode="over" opened="false" class="side-nav-bar">
     <ul class="bottombar">
+      <li><a [routerLink]="['/series']" routerLinkActive="active">Les Series</a></li>
       <li><a [routerLink]="['/auteur']" routerLinkActive="active">Auteur</a></li>
-      <li><a [routerLink]="['/series/cinqDenier']" routerLinkActive="active">Les 5 derniers dragons</a></li>
-      <li><a [routerLink]="['/series/ordreDragon']" routerLinkActive="active">L’Ordre des 5 Dragons</a></li>
-      <li><a [routerLink]="['/series/salsa']" routerLinkActive="active">Sortilèges, salsa et compagnie</a></li>
-      <li><a [routerLink]="['/series/jeuxpouvoir']" routerLinkActive="active">Les Jeux du pouvoir</a></li>
-      <li><a [routerLink]="['/series/detective']" routerLinkActive="active">L’Ame d’une détective</a></li>
     </ul>
   </md-sidenav>
   <router-outlet></router-outlet>

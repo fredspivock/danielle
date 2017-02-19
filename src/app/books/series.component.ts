@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import {BooksService} from './books.service';
 import { Serie } from './series';
 
+
 @Component({
   selector: "ddSeries",
   templateUrl: "./series.html",
@@ -12,11 +13,13 @@ export class SeriesComponent implements OnInit{
 
   constructor(private _booksService: BooksService){}
 
-  series: Serie[];
+  series: any[];
 
   ngOnInit(): void {
     this.series = this._booksService.getSeries();
-
+    this.series.forEach((serie) => {
+      serie.state = 'inactive';
+    });
   }
 
 }

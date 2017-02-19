@@ -1,5 +1,5 @@
-<div>
-  <div *ngFor="let icon of serie.icons" class="icon-repeat">
+<div fxLayout="row" fxLayoutWrap>
+  <div *ngFor="let icon of serie.icons" fxFlex="33" class="repeat-icon">
     <div class="icon-wrapper">
       <img [src]="icon.src">
       <div class="icon-caption">{{icon.caption}}</div>

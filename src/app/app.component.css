@@ -13,6 +13,7 @@ ul.bottombar {
 
 ul.bottombar li {
   padding-bottom: 10px;
+  width: 160px;
 }
 
 ul a {
@@ -58,7 +59,9 @@ nav {
   color:#00A0C6;
 }
 
+
 @media (min-width: 1280px) {
+
   nav.scrolled {
     background: rgba(255,255,255,.9);
     height: 45px;
@@ -79,7 +82,7 @@ nav {
     right: 6%;
   }
 
-  li {
+  .topbar li {
     padding-left: 5px;
     display: inline;
   }

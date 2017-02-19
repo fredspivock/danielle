@@ -1,0 +1,6 @@
+<div class="series-image-wrapper">
+  <a *ngFor="let serie of series" class="serie-wrapper" [routerLink]="['/series/' + serie.id]">
+    <img [src]="serie.imageUrl" style="width: 100%; height: auto">
+    <div class="image-title">{{serie.title}}</div>
+  </a>
+</div>

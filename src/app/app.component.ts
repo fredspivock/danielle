@@ -9,11 +9,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   isScrolled = false;
   onScroll(e) {
-    if(e.srcElement.scrollingElement.scrollTop > 45) {
-      this.isScrolled = true;
-    }
-    else {
-      this.isScrolled = false;
-    }
+    this.isScrolled = e.srcElement.scrollingElement.scrollTop > 45;
   }
 }
