@@ -128,15 +128,23 @@ nav {
 }
 
 .social-medias a {
-  padding-left: 2%;
+  padding-left: 10px;
+  padding-right: 10px;
   color: white;
 }
 
+.social-medias div {
+  display: inline-block;
+}
+
 .social-medias a:hover {
-  padding-left: 2%;
   color: rgb(182, 182, 182);
 }
 
 .footer-title {
   padding-left: 2%;
+}
+
+.renaudBray {
+  height: 30px;
 }

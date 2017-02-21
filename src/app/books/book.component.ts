@@ -17,6 +17,10 @@ export class BookComponent implements OnInit {
   bookId: string;
   book = {};
   serie: Serie;
+  goTo = function(buyUrl) {
+    window.location.href = buyUrl;
+  };
+
   private sub: Subscription;
   constructor(private _route: ActivatedRoute, private _booksService: BooksService){}
   ngOnInit(): void {

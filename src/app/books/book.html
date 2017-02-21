@@ -7,7 +7,8 @@
         </div>
       </div>
       <div fxFlex.gt-md="33" fxFlex="100" class="description-container">
-        <h2 class="title description-title">{{book.title}}</h2>
+        <h2 class="title description-title" style="display: inline-block">{{book.title}}</h2>
+        <button md-raised-button (click)="goTo(book.buyUrl)">Acheter</button>
         <div>
           {{book.description}}
         </div>
