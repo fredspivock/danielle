@@ -239,6 +239,34 @@ var books = [
         "imageUrl": "assets/images/detective/detective3.jpg"
       }
     ]
+  },
+  {
+    "id": "skyz",
+    "title": "Le monde selon Skyz",
+    "descriptionTitle": "L’espoir d’un monde meilleur !",
+    "description": "Jonathan, un garçon de 12 ans, et Élisabeth, une fillette de 10 ans, se retrouvent sous la domination d’envahisseurs barbares. Ensemble, ils s’évaderont de l’usine de fabrication d’antozonite et partiront à la recherche d’une solution à la libération de leurs compagnons.",
+    "imageUrl": "assets/images/skyz/skyz.png",
+    "icons": [
+      {"src": "assets/icons/robot.svg", "caption": "Science-fiction"},
+      {"src": "assets/icons/age13.svg", "caption": "Age 13+"},
+      {"src": "assets/icons/drop.svg", "caption": "Survie"}
+    ],
+    "color": "#808080",
+    "colorBlock": "#cc9900",
+    "books": [
+      {
+        "id": 1,
+        "title": "Tome 1 Le second élément",
+        "description": "Grand-Valmont, une ville touristique et prospère, est soudainement coupée du monde entier par deux hordes d’envahisseurs barbares: d’un côté, des Deuxcôtés, des guerriers exécuteurs et de l’autre, des Cracos, des organisateurs ayant une force extraordinaire malgré leur petite taille. Ces deux peuples travaillent en symbiose et n’ont qu’un seul but: s’emparer d’une matière rare en grande quantité. Pour ce faire, ils tuent les adultes pour ne garder que les enfants âgés de 7 à 14 ans, une main-d’œuvre docile et sans défense. Jonathan, un garçon de 12 ans, et Élisabeth, une fillette de 10 ans, font partie de ces jeunes dociles et travaillent dans une usine d’assemblage d’antozonite, le pétrole pourpre. Lors d’un orage sévère, ils s’échapperont de leur prison et réussiront à fuir la ville envahie. Une dame leur indique de se diriger vers la montagne. Réussiront-ils à s’y rendre en toute sécurité et à trouver l’aide pour libérer leurs compagnons de l’emprise de ses envahisseurs ?",
+        "imageUrl": "assets/images/skyz/skyz1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Tome 2 L’étrange zone 4",
+        "description": "Jonathan, sa mère et sa petite amie de cœur (Valérie) retournent à Grand-Valmont, une ville sinistrée, pour une commémoration en l’honneur de tous ceux qui avaient péri trois ans auparavant. Pour l’occasion, un grand nombre de journalistes, de touristes et d’anciens Grand-Valmontois les accompagneront ainsi que les promoteurs de cette nouvelle ville devenue un centre d’attraction grâce à un magnifique hôtel, son casino et d’une salle de spectacles. Une mystérieuse sculpture voilée trône près de l’hôtel Le Mémorable et donc son dévoilement est prévu la dernière journée.Lors du dévoilement de cette pièce, tout tourne au cauchemar. Jonathan et Valérie se voient confronter à nouveau avec des Cracos, de brillants organisateurs et des Deuxcôtés, des guerriers exécuteurs. Mais d’où viennent-ils ?",
+        "imageUrl": "assets/images/skyz/skyz2.jpg"
+      }
+    ]
   }
 ];
 
