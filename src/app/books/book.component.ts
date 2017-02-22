@@ -18,7 +18,7 @@ export class BookComponent implements OnInit {
   book = {};
   serie: Serie;
   goTo = function(buyUrl) {
-    window.location.href = buyUrl;
+    window.open(buyUrl);
   };
 
   private sub: Subscription;
