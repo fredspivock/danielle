@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from '@angular/material';
+import {SeriesComponent} from "./books/series.component";
 
 import { AppComponent } from './app.component';
 import {BooksModule} from "./books/books.module";
 
 const appRouter: Routes = [
+  {path: 'series', component: SeriesComponent},
   {path: '', redirectTo: '/series', pathMatch: 'full'}
 ];
 
