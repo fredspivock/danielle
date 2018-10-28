@@ -1,7 +1,7 @@
 <nav [class.scrolled]="isScrolled">
   <span class="title">Danielle Dumais</span>
   <ul class="topbar">
-    <li><a [routerLink]="['/series']" routerLinkActive="active">Les Series</a></li>
+    <li><a [routerLink]="['/series']" routerLinkActive="active">Les Séries</a></li>
     <li><a [routerLink]="['/auteur']" routerLinkActive="active">Auteure</a></li>
   </ul>
   <div class="hamburger-wrapper" (click)="sidenav.toggle()">
@@ -12,7 +12,7 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav mode="over" [opened]="false" class="side-nav-bar">
     <ul class="bottombar">
-      <li><a [routerLink]="['/series']" routerLinkActive="active">Les Series</a></li>
+      <li><a [routerLink]="['/series']" routerLinkActive="active">Les Séries</a></li>
       <li><a [routerLink]="['/auteur']" routerLinkActive="active">Auteure</a></li>
     </ul>
   </mat-sidenav>
