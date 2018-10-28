@@ -1,16 +1,18 @@
-import {NgModule} from "@angular/core";
-import {RouterModule, Routes} from "@angular/router";
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 import { BookSeriesComponent } from './book-series.component';
 import { BookComponent } from './book.component';
-import {BooksService} from "./books.service";
-import {BookCards} from "./books-cards.component";
-import {BookCard} from "./book-card.component";
-import {SharedModule} from "../shared/shared.module";
-import {BooksIcon} from "./books-icon.component";
-import {BioComponent} from "./bio.component";
-import {SeriesComponent} from "./series.component";
-import {SeriesPageComponent} from "./series-page.component";
-import {SeriesCarouselComponent} from "./series-carousel.component";
+import {BooksService} from './books.service';
+import {BookCards} from './books-cards.component';
+import {BookCard} from './book-card.component';
+import {SharedModule} from '../shared/shared.module';
+import {BooksIcon} from './books-icon.component';
+import {BioComponent} from './bio.component';
+import {SeriesComponent} from './series.component';
+import {SeriesPageComponent} from './series-page.component';
+import {SeriesCarouselComponent} from './series-carousel.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {MatButton, MatRippleModule} from '@angular/material';
 
 const bookRoutes: Routes = [
   {path: 'series', component: SeriesPageComponent},
@@ -21,7 +23,9 @@ const bookRoutes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forChild(bookRoutes),
-    SharedModule
+    SharedModule,
+    FlexLayoutModule,
+    MatRippleModule
   ],
   declarations: [
     BookSeriesComponent,
@@ -32,7 +36,8 @@ const bookRoutes: Routes = [
     BioComponent,
     SeriesComponent,
     SeriesPageComponent,
-    SeriesCarouselComponent
+    SeriesCarouselComponent,
+    MatButton
   ],
   providers: [ BooksService ]
 })

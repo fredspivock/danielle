@@ -7,7 +7,7 @@ var books = [
     "id": "cinqDenier",
     "title": "Les 5 derniers dragons",
     "descriptionTitle": "Une quête fantastique!",
-    "description": "Lorsque son père O’Neil Dagibold lui révélera l’existence secrète d’un dragon, une créature qu’on croyait inventée pour agrémenter les conversations, Andrick décidera de partir seul à la recherche d’Inféra, le dragon des légendes perdues. Lui, sa soeur jumelle Nina et toute la communauté des enchanteurs connaîtront des tourments et des évènements déchirants tout à fait inattendus.",
+    "description": "Lorsque son père O’Neil Dagibold lui révélera l’existence secrète d’un dragon, une créature qu’on croyait inventée pour agrémenter les conversations, Andrick décidera de partir seul à la recherche d’Inféra, le dragon des légendes perdues. Lui, sa sœur jumelle Nina et toute la communauté des enchanteurs connaîtront des tourments et des évènements déchirants tout à fait inattendus.",
     "imageUrl": "assets/images/cinq-dernier/banner.jpg",
     "icons": [
       {"src": "assets/icons/adventure.svg", "caption": "Aventure"},
@@ -19,31 +19,38 @@ var books = [
     "books": [
       {
         "id": 1,
-        "title": "Tome 1 L’enlèvement",
-        "description": "Lorsque son père O’Neil Dagibold lui révélera l’existence secrète d’un dragon, une créature qu’on croyait inventée pour agrémenter les conversations, Andrick décidera de partir seul à la recherche d’Inféra, le dragon des légendes perdues. Lui, sa soeur jumelle Nina et toute la communauté des enchanteurs connaîtront des tourments et des évènements déchirants tout à fait inattendus.",
+        "title": 'Integrale 1',
+        "description": `L’ENLÈVEMENT
+          TOME 1
+          En ce 31 août de l’an 150 du règne de Wilbras I, un magicien du nom d’Éxir observa un gigantesque et particulièrement sombre nuage survolant le château de la princesse Launa. Immédiatement, son sang se glaça. L’Envahisseur serait-il de retour ? Est-ce que le dôme protégeant Dorado fonctionnait-il encore ?
+          C’est ainsi qu’une grande et longue aventure commença pour Andrick lorsque son père O’Neil Dagibold lui révéla l’existence secrète d’un dragon, une créature qu’on croyait inventée pour agrémenter les conversations.
+          Piqué par une curiosité subite, Andrick décidera de partir seul à la recherche d’Inféra, un dragon légendaire. Lui, sa sœur jumelle Nina et toute la communauté des enchanteurs connaîtront des tourments et des évènements déchirants tout à fait inattendus.
+          `,
+        "description2": `
+        L’ÉPREUVE
+        TOME 2
+        Dans le silence d’une nuit étoilée, autour d’un feu, tous les yeux étaient rivés sur elle, Inféra frissonna d’effroi. Tous ces gens n’étaient pas là pour elle, ils étaient là pour le dragon qu’elle portait en elle.
+        Pourtant à l’aurore, aucune perturbation ni catastrophe ne s’étaient annoncées. Elle s’était levée comme d’habitude, avec une humeur mitigée par le soleil éclatant et joyeux, et par sa lassitude coutumière d’être seule. Inféra, qui avait si longtemps partagé sa solitude avec Picou, un magicien transformé en rat blanc, se voyait soudainement entourée d’inconnus à la fois aimables et perturbants. Elle devait quitter son antre et partir avec les jumeaux Andrick et Nina à la recherche des quatre autres porteurs de dragons.
+        La vie d’Inféra dépendra d’une épreuve que les jumeaux devront surmonter.`,
         "imageUrl": "assets/images/cinq-dernier/dragon1.jpg",
-        "buyUrl": "http://lumigny.com/fr/livre/les-5-derniers-dragons-l-enlevement/"
+        "buyUrl": "http://www.ada-inc.com/les-5-derniers-dragons-tome-6.html"
       },
       {
         "id": 2,
-        "title": "Tome 2 L’épreuve",
-        "description": "Dans le silence d’une nuit étoilée, autour d’un feu, tous les yeux étaient rivés sur elle, Inféra frissonna d’effroi. Elle devrait quitter son antre et partir avec les jumeaux Andrick et Nina à la recherche des quatre autres porteurs de dragon. Bien des péripéties attendent nos héros ; les vies d’Inféra et d’Améranda dépendront de la réussite de l’épreuve…",
+        "title": "Integrale 2",
+        "description":  `LA TERRE DES ELFES
+TOME 3
+L’extraordinaire périple des chevaliers du Dragon rouge se poursuit. La troupe se retrouve maintenant au pied de montagnes protégées par des gardiens appelés les Douades, des monstres cupides et sanguinaires. Bien que la troupe soit tentée de survoler cette chaîne de montagnes séparant le territoire des Cinq peuples et la Terre des Elfes, grâce à un magnifique cheval ailé du nom d’Horus et à de superbes et puissants dragnards, elle attend la manifestation de ces gardiens des lieux de passage pour éviter toute confrontation avec eux.
+À leur arrivée à la Terre des Elfes, Inféra rencontra Adora, une porteuse de dragon adorée et aimée de son peuple. Elles se lieront d’amitié et éprouveront une inquiétude commune qu’elles ne révéleront à personne.
+`,
+        "description2":`
+LE DIAMANT DE LUNE
+TOME 4
+Sommeillant, Andrick eut l’impression d’être épié. Il ouvrit un œil. La nuit étant particulièrement noire, il ne remarqua rien de particulier et il se rendormit. Quelques heures plus tard, il se fit bousculer par un homme vêtu de la tête au pied d’une djellaba blanche. À sa grande surprise, le magicien remarqua que tous ses amis avaient les mains liées et la bouche bâillonnée. Deux autres hommes se saisirent de lui et, avant même qu’il ne fît un geste ou n’émettre un cri, il fut lui aussi attaché et bâillonné.
+Leur quête pour retrouver le troisième dragon débutait sur une bien mauvaise note. Ils découvrirent que ce n’était hélas ! qu’une petite mésaventure parmi tant d’autres. Une rencontre inattendue et une cascade d’événements surprenants se succéderont.
+`,
         "imageUrl": "assets/images/cinq-dernier/dragon2.jpg",
-        "buyUrl": "http://lumigny.com/fr/livre/les-5-derniers-dragons-lepreuve/"
-      },
-      {
-        "id": 3,
-        "title": "Tome 3 La Terre des Elfes",
-        "description": "L’extraordinaire périple des chevaliers du Dragon rouge se poursuit. À leur arrivée à la Terre des Elfes, Inféra rencontre Adora, une porteuse de dragon comme elle. Contrairement à elle-même, qui fut gardée loin de tout regard, celle-ci était adorée et aimée de son peuple. Elles se lieront d’amitié et éprouveront une inquiétude commune qu’elles ne révéleront à personne. À vous de découvrir ce terrible secret.",
-        "imageUrl": "assets/images/cinq-dernier/dragon3.jpg",
-        "buyUrl": "http://www.ada-inc.com/cinq-derniers-dragons-2205.html"
-      },
-      {
-        "id": 4,
-        "title": "Tome 4 Le diamant de lune",
-        "description": "Leur quête pour retrouver le troisième dragon débutait sur une bien mauvaise note. Ils découvriront que ce n’était hélas! qu’une petite mésaventure parmi tant d’autres. Ce peuple habitué à bien des souffrances et des privations leur réserve une rencontre inattendue et une cascade d’événements surprenants se succédera. ",
-        "imageUrl": "assets/images/cinq-dernier/dragon4.jpg",
-        "buyUrl": "http://www.ada-inc.com/5-derniers-dragons-tome-4.html"
+        "buyUrl": "http://www.ada-inc.com/les-5-derniers-dragons-tome-6.html"
       },
       {
         "id": 5,
@@ -143,7 +150,7 @@ var books = [
   },
   {
     "id": "salsa",
-    "title": "Sortilèges, salsa et compagnie",
+    "title": "Le Club Salsa",
     "descriptionTitle": "Aventure et magie",
     "description": "Les jumelles Saléna et Samara ont plus qu’un tour de magie dans leur sac. Grâce à un événement inattendu, elles acquerront des pouvoirs magiques. Elles apprendront que deux de ses voisins, Simon et Maxime, ont eu aussi des pouvoirs magiques. Une alliance entre eux se formera. De multiples péripéties loufoques se succéderont à un rythme soutenu. Rire garanti.",
     "imageUrl": "assets/images/salsa/bansort.jpg",
@@ -157,24 +164,24 @@ var books = [
     "books": [
       {
         "id": 1,
-        "title": "Tome 1 L’événement",
+        "title": "Tome 1 Un 13 juillet fatidique",
         "description": "Cinq filles de la rue des Ormes décident de former un club pour se désennuyer, le club Salsa, dont le but est de combattre l'ennemi: cinq gars du voisinage. Un événement viendra chambouler leurs plans et des phénomènes bizarres feront leur apparition. Mais quel est donc cet événement qui frappera la petite municipalité de Saint-Parlinpin?",
         "imageUrl": "assets/images/salsa/sort1.jpg",
-        "buyUrl": "http://www.ada-inc.com/sortileges-salsa-et-compagnie-1.html"
+        "buyUrl": "http://zyeudoreditions.ca/publications/le-club-salsa/"
       },
       {
         "id": 2,
         "title": "Tome 2 Euphorie",
         "description": "Bien malgré eux, Saléna et Simon provoqueront d'autres phénomènes inexpliqués qui viendront mettre une distance entre le club Salsa et leurs ex-amis. Les quatre amis parviendront- ils à se consacrer à leur mission, c'est-à-dire sauver Adeline?",
         "imageUrl": "assets/images/salsa/sort2.jpg",
-        "buyUrl": "http://www.ada-inc.com/sortileges-salsa-et-compagnie-2.html"
+        "buyUrl": "http://zyeudoreditions.ca/publications/le-club-salsa-tome-2-euphorie/"
       },
       {
         "id": 3,
         "title": "Tome 3 Révélation",
         "description": "La pauvre Samara constate avec effroi qu'elle a perdu l'habileté de redessiner la carte magique détruite deux fois. Sans cette carte reproduite parfaitement, Saléna ne peut rapporter la pomme d'or pour sauver la vie d'Adeline. De plus, une révélation leur sera transmise par un étrange androïde. Quelle est donc cette révélation?",
         "imageUrl": "assets/images/salsa/sort3.jpg",
-        "buyUrl": "http://www.ada-inc.com/sortileges-salsa-et-compagnie-tome-3.html"
+        "buyUrl": "http://zyeudoreditions.ca/publications/le-club-salsa-3/"
       },
       {
         "id": 4,
@@ -230,43 +237,6 @@ var books = [
     ]
   },
   {
-    "id": "detective",
-    "title": "L’ Ame d’une détective",
-    "descriptionTitle": "Il n’existe pas de crimes parfaits !",
-    "description": "C’est avec une immense joie que la sergente-détective Martine Gendron accède à la section des homicides. 26 ans sont passés depuis la mort de son père. Quotidiennement, elle se remémore le jour où elle accompagnait fièrement son père et que celui-ci est décédé suite à une balle perdue lors d’un cambriolage d’une banque. À son grand désarroi, le meurtrier n’a jamais été retrouvé ainsi que ses comparses du vol par effraction. Consciente que la perte d’un être cher change une vie, elle se fera un devoir de rechercher coûte que coûte les criminels impunis.",
-    "imageUrl": "assets/images/detective/detectiveban.jpg",
-    "icons": [
-      {"src": "assets/icons/polar.svg", "caption": "Polar"},
-      {"src": "assets/icons/age13.svg", "caption": "Age 13+"},
-      {"src": "assets/icons/justice.svg", "caption": "Justice"}
-    ],
-    "color": "#214247",
-    "colorBlock": "#636108",
-    "books": [
-      {
-        "id": 1,
-        "title": "Tome 1 Mosaïque",
-        "description": "Un cas compliqué échoue sur le bureau de Martine Gendron. Sur place, elle découvre une personne défigurée à coups d’un objet contondant gisant sans vie dans son lit. Aucune trace d’effraction. Une panoplie de suspects se présentera à elle, tous ayant plus ou moins une raison de le tuer. Plusieurs de ses collègues rêvent de s’approprier de ce cas et sont prêts à lui jouer dans le dos. Fort heureusement, quelques jours après un début cahoteux d’enquête, Bernard son supérieur immédiat lui rappela: « c’est ton enquête, ta première, ta vraie enquête. Elle t’appartient ». Cette phrase lui redonna confiance. Oui, elle le savait. Le métier d’enquêteur usait l’âme et déjà elle en ressentait les premiers effets. Sur une trame de roman policier, vous découvrirez la nature perturbée de Martine ainsi que ses hésitations et ses malaises. ",
-        "imageUrl": "assets/images/detective/detective1.jpg",
-        "buyUrl": "http://www.ada-inc.com/l-ame-d-une-detective-livre-1.html"
-      },
-      {
-        "id": 2,
-        "title": "Tome 2 Les déesses de glace",
-        "description": "Elle était resplendissante comme une poupée vitrifiée, comme une déesse dans son sanctuaire à quelques pas d’un large escalier de bois. Les arbres dissimulaient le haut de l’escalier. Martine avait envie de gravir cet escalier qui montait vers l’infini. Un calme mystérieux régnait et les enveloppait. Elle est parfaite. Ses cheveux sont bien placés. Martine Gendron et son compagnon Boris Popovich sont à la recherche de ce tueur qui tue en hiver et qui se limite à un secteur très particulier, la faculté de médecine de l’université de McGill. Bien vite, les horreurs de rites sataniques les hanteront et glaceront le sang des enquêteurs à la recherche de ce tueur en série. Lorsqu’une seconde tempête s’abat sur Montréal, Martine est convaincue qu’une quatrième victime décédera.",
-        "imageUrl": "assets/images/detective/detective2.jpg",
-        "buyUrl": "http://www.ada-inc.com/l-ame-d-une-detective-livre-2.html"
-      },
-      {
-        "id": 3,
-        "title": "Tome 3 Animal",
-        "description": "Martine épingle les photos de cinq fillettes sur le tableau de liège, cinq fillettes âgées entre 8 et 10 ans dont la disparition reste inexpliquée. Un mystère total. Pourtant, le premier cas remonte déjà à un peu moins de cinq ans. Des rencontres éprouvantes sont en vue. Certaines familles ont fait leur deuil, d’autres espèrent encore que leur enfant soit vivante, d’autres oscillent entre le deuil et la certitude de revoir leur enfant. Avec le temps, l’espoir s’effrite et les sentiments sont d’autant plus douloureux. Bien que le désir le plus profond de Martine soit de trouver ce ravisseur ou ce meurtrier, elle ne se sent pas la force nécessaire de les confronter et d’entendre leurs sanglots. Pourtant, une hantise l’obsède. Cet être ignoble est sur le point de récidiver. Martine doit maîtriser ses émotions et foncer à la recherche de ce monstre, de cet animal. Arrivera-t-elle à temps pour contrecarrer son plan machiavélique, avant qu’une sixième fillette ne tombe entre ses sales mains?",
-        "imageUrl": "assets/images/detective/detective3.jpg",
-        "buyUrl": "http://www.ada-inc.com/l-ame-d-une-detective-livre-3.html"
-      }
-    ]
-  },
-  {
     "id": "skyz",
     "title": "Le monde selon Skyz",
     "descriptionTitle": "L’espoir d’un monde meilleur !",
@@ -293,6 +263,29 @@ var books = [
         "description": "Jonathan, sa mère et sa petite amie de cœur (Valérie) retournent à Grand-Valmont, une ville sinistrée, pour une commémoration en l’honneur de tous ceux qui avaient péri trois ans auparavant. Pour l’occasion, un grand nombre de journalistes, de touristes et d’anciens Grand-Valmontois les accompagneront ainsi que les promoteurs de cette nouvelle ville devenue un centre d’attraction grâce à un magnifique hôtel, son casino et d’une salle de spectacles. Une mystérieuse sculpture voilée trône près de l’hôtel Le Mémorable et donc son dévoilement est prévu la dernière journée.Lors du dévoilement de cette pièce, tout tourne au cauchemar. Jonathan et Valérie se voient confronter à nouveau avec des Cracos, de brillants organisateurs et des Deuxcôtés, des guerriers exécuteurs. Mais d’où viennent-ils ?",
         "imageUrl": "assets/images/skyz/skyz2.jpg",
         "buyUrl": "http://www.ada-inc.com/le-monde-selon-skyz-tome-2-l-etrange-zone-4.html"
+      }
+    ]
+  },
+  {
+    "id": "champagne",
+    "title": "Aurore Champagne",
+    "descriptionTitle": "Soyons zen !",
+    "description": "À l’aube de ses 24 ans, Aurore, une épicurienne et une stagiaire en architecture, rêve d’une vie plus satisfaisante que celle de pousser du papier pour une grande firme d’architecture. Elle conçoit donc d’écrire un livre de recettes qui la propulsera (c’est ce qu’elle croit) au sommet de la gloire. Fini les petites tâches routinières et vive la célébrité ! Mais hélas ! les débuts de cette aventure culinaire la rebuteront à de multiples reprises. Pétillante comme du champagne et loin d’être la fille ennuyeuse, Aurore saura vous toucher.",
+    "imageUrl": "assets/images/champagne/banner.jpg",
+    "icons": [
+      {"src": "assets/icons/book.svg", "caption": "Roman"},
+      {"src": "assets/icons/woman.svg", "caption": "Adultes"},
+      {"src": "assets/icons/jealous.svg", "caption": "Jalousie"}
+    ],
+    "color": "#d3cec3",
+    "colorBlock": "#cc3727",
+    "books": [
+      {
+        "id": 1,
+        "title": "Champagne!",
+        "description": "Agée de 24 ans, Aurore Champagne coule des jours monotones au sein du cabinet d’architectes où elle occupe la fonction de stagiaire. Pousser du papier, surveiller des chantiers, valider des factures, finaliser des plans; son travail l’ennuie royalement. Et c’est sans compter la piètre relation qu’elle entretient avec ses collègues en général. Elle rêvait d’architecture, de création et de gloire internationale depuis son adolescence. Sa mère avait bien tenté de l’en dissuader, lui vantant les mérites des sciences comptables… sans succès. Elle ne manquait d’ailleurs pas de souligner lourdement à Aurore le succès très médiatisé de son inséparable amie d’enfance, Virginie, designer courue et appréciée. Jalouse du succès de son amie, désireuse de s’élever de sa condition professionnelle actuelle et mue par sa passion dévorante pour la gastronomie, Aurore caresse le rêve de publier son propre livre de recettes, et d’accéder ainsi à la célébrité. Aurore ne devine pas dans quel guêpier elle vient de mettre les pieds!\n",
+        "imageUrl": "assets/images/champagne/aurore1.jpg",
+        "buyUrl": ""
       }
     ]
   }

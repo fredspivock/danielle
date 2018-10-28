@@ -1,13 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
-import { MaterialModule } from '@angular/material';
-import {SeriesComponent} from "./books/series.component";
+import {SeriesComponent} from './books/series.component';
 
 import { AppComponent } from './app.component';
-import {BooksModule} from "./books/books.module";
+import {BooksModule} from './books/books.module';
+import {HttpClientModule} from '@angular/common/http';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatSidenavModule} from '@angular/material';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 const appRouter: Routes = [
   {path: 'series', component: SeriesComponent},
@@ -21,10 +23,12 @@ const appRouter: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
     RouterModule.forRoot(appRouter),
-    MaterialModule.forRoot(),
-    BooksModule
+    BooksModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
