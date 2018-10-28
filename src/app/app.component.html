@@ -1,7 +1,7 @@
 <nav [class.scrolled]="isScrolled">
   <span class="title">Danielle Dumais</span>
   <ul class="topbar">
-    <li><a [routerLink]="['/series']" routerLinkActive="active">Les Series</a></li>
+    <li><a [routerLink]="['/series']" routerLinkActive="active">Les Séries</a></li>
     <li><a [routerLink]="['/auteur']" routerLinkActive="active">Auteure</a></li>
   </ul>
   <div class="hamburger-wrapper" (click)="sidenav.toggle()">
@@ -9,13 +9,13 @@
   </div>
 </nav>
 <div class="nav-padding"></div>
-<md-sidenav-container>
-  <md-sidenav #sidenav mode="over" opened="false" class="side-nav-bar">
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over" [opened]="false" class="side-nav-bar">
     <ul class="bottombar">
-      <li><a [routerLink]="['/series']" routerLinkActive="active">Les Series</a></li>
+      <li><a [routerLink]="['/series']" routerLinkActive="active">Les Séries</a></li>
       <li><a [routerLink]="['/auteur']" routerLinkActive="active">Auteure</a></li>
     </ul>
-  </md-sidenav>
+  </mat-sidenav>
   <router-outlet></router-outlet>
   <footer class="main-footer">
     <div class="footer-title"><h2>Contacts et réseaux sociaux</h2></div>
@@ -34,5 +34,5 @@
     </div>
     <div class="rights">© 2017 Danielle Dumais. All rights reserved.</div>
   </footer>
-</md-sidenav-container>
+</mat-sidenav-container>
 
